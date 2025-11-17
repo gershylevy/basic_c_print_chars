@@ -5,6 +5,9 @@
 -------------------------------------------------------*/
 
 #include<stdio.h>
+#define FIRST_DIVISOR (5)
+#define SECOND_DIVISOR (3)
+#define THIRD_DIVISOR (2)
 
 int main(){
     
@@ -15,15 +18,15 @@ int main(){
     scanf("%d",&num);
 
     //do lowest priority first so we could overwrite it if we need
-    if(num%5==0){
+    if(num%FIRST_DIVISOR==0){
         char_to_print='%';
     }
 
-    if(num%3==0){
+    if(num%SECOND_DIVISOR==0){
         char_to_print='^';
     }
 
-    if(num%2==0){
+    if(num%THIRD_DIVISOR==0){
         char_to_print='*';
     }
 
